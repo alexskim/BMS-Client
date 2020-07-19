@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.transferActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/edt_login_focused2"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="30dp"
+            android:text="转账"/>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <EditText
+                android:id="@+id/editTextToUid"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:hint="对方 id"/>
+            <Spinner
+                android:id="@+id/spinnerCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/editTextAmount"
+                android:layout_margin="20dp"
+                android:textSize="20dp"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:inputType="numberDecimal"
+                android:hint="金额"/>
+            <Button
+                android:id="@+id/buttonTransferSubmit"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="转账"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

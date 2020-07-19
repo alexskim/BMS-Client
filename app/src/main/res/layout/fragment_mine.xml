@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MineFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/bg"
+        android:padding="10dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mine_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/touxiang_1"
+            />
+
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.4"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ListView
+            android:id="@+id/mine_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/mine_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_delete"
+            android:textColor="#fff"
+            android:layout_margin="20dp"
+            android:text="注销账号" />
+        <Button
+            android:id="@+id/mine_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:textColor="#fff"
+            android:layout_weight="0.5"
+            android:layout_margin="20dp"
+            android:text="退出登录" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>
+</FrameLayout>

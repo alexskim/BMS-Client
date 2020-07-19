@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SuccessActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:text="处理成功"/>
+        <TextView
+            android:id="@+id/tvSuccessAmount"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="40dp"
+            android:text="-100.00"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#2E2828" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="货币类型    "/>
+            <TextView
+                android:id="@+id/tvSuccessCurrency"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="CNY"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="交易类型    "/>
+            <TextView
+                android:id="@+id/tvSuccessType"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="转账"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llType"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="对方账户    "/>
+            <TextView
+                android:id="@+id/tvSuccessToUid"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="16"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="交易日期    "/>
+            <TextView
+                android:id="@+id/tvSuccessTime"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="2020年6月25日22:55:40"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

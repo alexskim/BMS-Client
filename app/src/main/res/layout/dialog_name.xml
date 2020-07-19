@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBg"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@android:drawable/ic_dialog_info"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置姓名"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/dialog_edt_tname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:textSize="28sp"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:hint="请输入你的名字"/>
+
+        <EditText
+            android:id="@+id/dialog_edt_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:textSize="28sp"
+            android:paddingLeft="6dp"
+            android:singleLine="true"
+            android:hint="请输入你的电话"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/dialog_btn_tname_update"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="确定"
+                android:background="@drawable/btn_login"
+                android:textColor="#fff"/>
+            <Button
+                android:id="@+id/dialog_btn_tname_cancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="取消"
+                android:background="@drawable/btn_login"
+                android:textColor="#fff"
+                android:layout_marginLeft="36dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
